@@ -1,4 +1,4 @@
-# C Code Documentation
+# Lab Sheet 1
 
 This sub-repository contains various C code files with different functionalities. Each code file is described below.
 
