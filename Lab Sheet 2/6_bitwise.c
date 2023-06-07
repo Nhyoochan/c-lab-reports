@@ -6,9 +6,8 @@ int main()
     printf("a&b = %d\n", a & b);
     printf("a|b = %d\n", a | b);
     printf("a^b = %d\n", a ^ b);
-    printf("(a<<b) = %d\n", (a << 2));
-    printf("(b<<a) = %d\n", (b << 2));
-    printf("(a>>b) = %d\n", (a >> 2));
-    printf("(b>>a) = %d\n", (b >> 2));
+    printf("~a = %d\n", ~a);
+    printf("(b<<2)+(a<<1) = %d\n", (b << 2) + (a << 1));
+    printf("(b>>1)+(a>>1) = %d\n", (b >> 1) + (a >> 1));
     return 0;
 }
