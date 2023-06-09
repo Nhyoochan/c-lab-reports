@@ -47,7 +47,7 @@ int main()
 Hello, World!
 ```
 
-## **Detailed Description**
+## **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -93,7 +93,7 @@ Roll Number: PUR079BCT094
 Address: Tulsipur - 4, Dang
 ```
 
-## **Detailed Description**
+## **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -137,7 +137,7 @@ int main()
 Sum: 30
 ```
 
-## **Detailed Description**
+## **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.

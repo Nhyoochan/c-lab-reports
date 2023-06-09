@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Program to find the minimum of two numbers using ternary operator]
 #include <stdio.h>
 
 int main()

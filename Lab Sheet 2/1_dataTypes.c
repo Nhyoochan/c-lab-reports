@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Program to print the size of different data types]
 #include <stdio.h>
 
 int main()

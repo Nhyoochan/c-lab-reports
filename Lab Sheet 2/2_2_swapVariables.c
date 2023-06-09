@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Program to swap two variables without using a third variable ]
 #include <stdio.h>
 
 int main()
