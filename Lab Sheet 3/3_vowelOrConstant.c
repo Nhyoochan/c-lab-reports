@@ -1,3 +1,4 @@
+// [Desc: Program to check whether a character is a vowel or a consonant.]
 #include <stdio.h>
 
 int main()

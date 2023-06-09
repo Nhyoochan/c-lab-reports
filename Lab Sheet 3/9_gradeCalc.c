@@ -1,3 +1,4 @@
+// [Desc: Program to calculate the grade of a student.]
 #include <stdio.h>
 
 int main()

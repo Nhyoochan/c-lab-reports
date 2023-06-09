@@ -1,3 +1,4 @@
+// [Desc: Program to find the maximum of three numbers.]
 #include <stdio.h>
 
 int main()

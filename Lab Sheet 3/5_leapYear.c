@@ -1,3 +1,4 @@
+// [Desc: Program to check whether a year is a leap year or not.]
 #include <stdio.h>
 
 int main() {

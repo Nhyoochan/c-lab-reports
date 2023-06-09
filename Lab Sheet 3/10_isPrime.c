@@ -1,3 +1,4 @@
+// [Desc: Program to check if a number is prime or not.]
 #include <stdio.h>
 
 int main()
