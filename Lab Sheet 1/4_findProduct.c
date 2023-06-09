@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Product of two numbers]
 #include <stdio.h>
 int main()
 {

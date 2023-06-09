@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Sum of two numbers]
 #include <stdio.h>
 
 int main()

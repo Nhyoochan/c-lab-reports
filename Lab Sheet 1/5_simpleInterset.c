@@ -1,3 +1,5 @@
+// [Author: jrTilak]
+// [Desc: Simple Interest]
 #include <stdio.h>
 
 int main()
