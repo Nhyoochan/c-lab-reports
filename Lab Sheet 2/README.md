@@ -47,7 +47,6 @@ int main()
 
     return 0;
 }
-
 ```
 ## **Possible Output**
 ```
@@ -113,7 +112,6 @@ int main()
 
     return 0;
 }
-
 ```
 ## **Possible Output**
 ```
@@ -266,7 +264,6 @@ int main()
 Enter the first number: 10
 Enter the second number: 5
 The minimum number is: 5
-
 ```
 
 ## **Description**
@@ -336,7 +333,7 @@ This program allows the user to input a number and uses the conditional operator
 <br/>
 <br/>
 
-># <span id="q6">What are the output of the following programs:
+># <span id="q6">6. What are the output of the following programs:
 </span>
 
 ## **Introduction**
@@ -358,7 +355,6 @@ int main()
     printf("(b>>1)+(a>>1) = %d\n", (b >> 1) + (a >> 1));
     return 0;
 }
-
 ```
 ## **Possible Output**
 ```
@@ -369,7 +365,6 @@ a^b = 12
 ~a = -6
 (b<<2)+(a<<1) = 38
 (b>>1)+(a>>1) = 6
-
 ```
 
 ## **Description**
@@ -385,37 +380,36 @@ Similarly, the bitwise OR operation between a and b is performed using the | ope
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
   
 ## **More on Bitwise Operators**
-1. Bitwise AND (&):
-
-* The bitwise AND operator performs a binary AND operation on each pair of corresponding bits of the operands.
-* In the program, a & b performs a bitwise AND operation between a and b.
-* The result is a number where each bit is set to 1 if both corresponding bits in a and b are 1; otherwise, the bit is set to 0.
-2. Bitwise OR ( | ):
-
-* The bitwise OR operator performs a binary OR operation on each pair of corresponding bits of the operands.
-In the program, a | b performs a bitwise OR operation between a and b.
-* The result is a number where each bit is set to 1 if at least one of the corresponding bits in a or b is 1; otherwise, the bit is set to 0.
-3. Bitwise XOR (^):
-
-* The bitwise XOR operator performs a binary XOR (exclusive OR) operation on each pair of corresponding bits of the operands.
-* In the program, a ^ b performs a bitwise XOR operation between a and b.
-* The result is a number where each bit is set to 1 if the corresponding bits in a and b are different; otherwise, the bit is set to 0.
-4. Bitwise NOT (~):
-
-* The bitwise NOT operator performs a unary NOT operation on each bit of the operand, flipping the bits.
-* In the program, ~a performs a bitwise NOT operation on a.
-* The result is a number where each bit is inverted, i.e., 1 becomes 0 and 0 becomes 1.
-5. Left Shift (<<):
-
-* The left shift operator shifts the bits of the left operand to the left by a specified number of positions, and fills the vacant positions with 0.
-* In the program, b << 2 shifts the bits of b to the left by 2 positions.
-* Similarly, a << 1 shifts the bits of a to the left by 1 position.
-* The shifted values are then added together.
-6. Right Shift (>>):
-
-* The right shift operator shifts the bits of the left operand to the right by a specified number of positions.
-* In the program, b >> 1 shifts the bits of b to the right by 1 position.
-* Similarly, a >> 1 shifts the bits of a to the right by 1 position.
-* The shifted values are then added together.
+Bitwise operators in C are used to manipulate individual bits of data. They perform operations on the binary representation of integers at the bit level. This article provides a detailed explanation of the commonly used bitwise operators in C, presented in simple language for beginners.
+1. AND Operator (&)
+    * Performs a bitwise AND operation between two operands by comparing the corresponding bits of the operands.
+    * The result has a 1 in each bit position where both operands have a 1, otherwise, it has a 0.
+    * Used to mask or extract specific bits from a number by combining it with a bit mask.
+    * Commonly used for bitwise operations such as checking if a specific bit is set.
+2. OR Operator (|)
+    * Performs a bitwise OR operation between two operands by comparing the corresponding bits of the operands.
+    * The result has a 1 in each bit position where at least one of the corresponding bits is set to 1.
+    * Used to set specific bits in a number by combining it with a bit mask.
+    * Commonly used for bitwise operations such as combining multiple flags or options.
+3. XOR Operator (^)
+    * Performs a bitwise XOR (exclusive OR) operation between two operands by comparing the corresponding bits of the operands.
+    * The result has a 1 in each bit position where the corresponding bits of the operands are different, otherwise, it has a 0.
+    * Used to toggle specific bits in a number by combining it with a bit mask.
+    * Commonly used for bitwise operations such as flipping the state of a flag or option.
+4. NOT Operator (~)
+    * Performs a bitwise NOT operation on a single operand by inverting all its bits.
+    * Changes each 0 to 1 and each 1 to 0.
+    * Used to reverse the bits of a number or to create the one's complement of a binary value.
+    * Commonly used for bitwise operations such as inverting the state of all bits in a number.
+5. Left Shift Operator (<<)
+    * Shifts the bits of the left-hand operand to the left by a specified number of positions.
+    * The empty bits on the right side are filled with 0.
+    * Equivalent to multiplying the number by 2 raised to the power of the shift amount.
+    * Commonly used for bitwise operations such as multiplying or dividing a number by powers of 2.
+6. Right Shift Operator (>>)
+    * Shifts the bits of the left-hand operand to the right by a specified number of positions.
+    * The empty bits on the left side are filled based on the sign bit (for signed integers) or with 0 (for unsigned integers).
+    * Equivalent to dividing the number by 2 raised to the power of the shift amount.
+    * Commonly used for bitwise operations such as extracting or dividing a number by powers of 2.
 ## **Conclusion**
 This program demonstrates the usage of bitwise operations such as AND, OR, XOR, NOT, left shift, and right shift on two integer variables a and b. The program showcases how these operations can be used to manipulate the individual bits of the variables and perform various operations based on bitwise manipulation. The output displays the results of each operation, providing insights into the behavior of these bitwise operators in C programming.
