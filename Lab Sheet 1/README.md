@@ -4,12 +4,12 @@ This lab sheet is a part of the Computer Programming course for Bachelor's in Co
 
 ## Table of Contents
 
-1. [Question 1: WAP to display hello world](#question-1-wap-to-display-hello-world)
-2. [Question 2: WAP to display your name, roll number, and address](#question-2-wap-to-display-your-name-roll-number-and-address)
-3. [Question 3: WAP to add two integer variables and print sum](#question-3-wap-to-add-two-integer-variables-and-print-sum)
-4. [Question 4: WAP to multiply two integer variables and print product](#question-4-wap-to-multiply-two-integer-variables-and-print-product)
-5. [Question 5: WAP to calculate and display the simple interest](#question-5-wap-to-calculate-and-display-the-simple-interest)
-6. [Question 6: WAP to calculate the area of the circle](#question-6-wap-to-calculate-the-area-of-the-circle)
+1. [Question 1: WAP to display hello world](#q1)
+2. [Question 2: WAP to display your name, roll number, and address](#q2)
+3. [Question 3: WAP to add two integer variables and print sum](#q3)
+4. [Question 4: WAP to multiply two integer variables and print product](#q4)
+5. [Question 5: WAP to calculate and display the simple interest](#q5)
+6. [Question 6: WAP to calculate the area of the circle](#q6)
 
 ---
 ---
@@ -23,7 +23,7 @@ This lab sheet is a part of the Computer Programming course for Bachelor's in Co
 <br/>
 <br/>
 
-># <span id="question-1-wap-to-display-hello-world">1. WAP to display "Hello, World!" in C</span>
+># <span id="q1">1. WAP to display "Hello, World!" in C</span>
 
 
 ## **Introduction**
@@ -66,7 +66,7 @@ The "Hello, World!" program is a basic and fundamental program in any programmin
 <br/>
 <br/>
 
-># <span id="question-2-wap-to-display-your-name-roll-number-and-address"> 2. WAP to display your name, roll number, and address in C </span>
+># <span id="q2"> 2. WAP to display your name, roll number, and address in C </span>
 
 ## **Introduction**
 This program displays your name, roll number, and address using the C programming language.
@@ -112,7 +112,7 @@ This program demonstrates how to display your name, roll number, and address usi
 <br/>
 <br/>
 
-># <span id="question-3-wap-to-add-two-integer-variables-and-print-sum"> 3. WAP to add two integer variables and print the sum in C </span>
+># <span id="q3"> 3. WAP to add two integer variables and print the sum in C </span>
 
 ## **Introduction**
 This program calculates the sum of two integer variables and prints the result using the C programming language.
@@ -158,7 +158,7 @@ This program demonstrates how to add two integer variables and print the sum usi
 <br/>
 <br/>
 
-># <span id="question-4-wap-to-multiply-two-integer-variables-and-print-product"> 4. WAP to multiply two integer variables and print the product in C </span>
+># <span id="q4"> 4. WAP to multiply two integer variables and print the product in C </span>
 
 ## **Introduction**
 This program calculates the product of two integer variables and prints the result using the C programming language.
@@ -204,7 +204,7 @@ This program demonstrates how to multiply two integer variables and print the pr
 <br/>
 <br/>
 
-># <span id = "question-5-wap-to-calculate-and-display-the-simple-interest"> 5. WAP to calculate and display the simple interest in C </span>
+># <span id = "q5"> 5. WAP to calculate and display the simple interest in C </span>
 
 ## **Introduction**
 This program calculates and displays the simple interest using the C programming language.
@@ -251,7 +251,7 @@ This program demonstrates how to calculate and display the simple interest using
 <br/>
 <br/>
 
-># <span id="question-6-wap-to-calculate-the-area-of-the-circle"> 6. WAP to calculate the area of a circle in C </span>
+># <span id="q6"> 6. WAP to calculate the area of a circle in C </span>
 ## **Introduction**
 This program calculates the area of a circle using the C programming language.
 
