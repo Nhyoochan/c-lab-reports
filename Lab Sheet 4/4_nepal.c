@@ -1,3 +1,4 @@
+// [Desc: Prints a string in formatted columns]
 #include <stdio.h>
 
 int main()

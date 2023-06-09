@@ -1,3 +1,4 @@
+// [Desc: Reads and prints name and address using unformatted I/O]
 #include <stdio.h>
 
 int main()

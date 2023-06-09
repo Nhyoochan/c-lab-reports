@@ -1,3 +1,4 @@
+// [Desc: Reads and prints ASCII value of a character]
 #include <stdio.h>
 
 int main()

@@ -1,3 +1,4 @@
+// [Desc: Prints values of variables in formatted columns]
 #include <stdio.h>
 
 int main()
