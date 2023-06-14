@@ -155,7 +155,141 @@ The program successfully displays the multiplication table of the integer entere
 <br/>
 <br/>
 
-<!-- 
+
+>## <span id="q3">3. WAP to input two integer values from the user and print the even number between the range of integers. Also count the even number and display the count as well [Hint: if user enters 10 and 100. The program should print and count even numbers between 10 and 100].</span>
+
+### **Introduction**
+This program takes two integer values from the user, min and max, and prints all the even numbers between the range of these two values. It also counts the number of even numbers and displays the count.
+### **Code**
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int min, max, count = 0;
+
+    printf("Enter the minimum and maximum value: ");
+    scanf("%d%d", &min, &max);
+
+    if (min > max)
+    {
+        int temp = min;
+        min = max;
+        max = temp;
+    }
+
+    printf("The even numbers between %d and %d are: ", min, max);
+
+    for (int i = min + 1; i < max; i++)
+    {
+        if (i % 2 == 0)
+        {
+            printf("%d ", i);
+            count++;
+        }
+    }
+
+    if (count == 0)
+    {
+        printf("none ");
+    }
+
+    printf("\nThere are %d even numbers.\n", count);
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter the minimum and maximum value: 10 20
+The even numbers between 10 and 20 are: 12 14 16 18 
+There are 4 even numbers.
+```
+```
+Enter the minimum and maximum value: 15 15
+The even numbers between 15 and 15 are: none 
+There are 0 even numbers.
+```
+```
+Enter the minimum and maximum value: 20 10
+The even numbers between 10 and 20 are: 12 14 16 18 
+There are 4 even numbers.
+```
+
+### **Description**
+* The user is prompted to enter the minimum and maximum values.
+* The entered values are stored in the variables min and max.
+* If the minimum value is greater than the maximum value, the program swaps the values.
+* The program prints the header line for the even numbers.
+* The for loop is used to iterate from min + 1 to max - 1.
+* Inside the loop, the program checks if the current value i is divisible by 2 (i.e., even). If so, it is printed and the count is incremented.
+* If no even numbers are found (count is 0), the program prints "none".
+* Finally, the program prints the count of even numbers.
+* The program terminates.
+### **Conclusion**
+The program successfully takes two integer values from the user and prints all the even numbers between the given range. It counts the even numbers and displays the count. The output demonstrates the even numbers between the provided range and shows the count of even numbers.
+
+
+---
+---
+<br/>
+<br/>
+
+>## <span id="q4">4. WAP to display sum of series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n.</span>
+
+### **Introduction**
+This program calculates the sum of the series: 1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/n, where n is the value provided by the user.
+### **Code**
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    float sum = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        sum += 1 / (float)i;
+    }
+
+    printf("The sum of series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n is %f", sum);
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter the value of n: 5
+The sum of series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n is 2.283333
+```
+
+### **Description**
+* The user is prompted to enter the value of n.
+* The entered value is stored in the variable n.
+* The program initializes the variable sum as 0 to store the sum of the series.
+* The for loop is used to iterate from 1 to n.
+* Inside the loop, the program adds the reciprocal of the current value i to the sum.
+* Since the division is between an integer (1) and a float ((float)i), the result is automatically converted to a float, ensuring the decimal values are considered in the sum.
+* After the loop finishes, the program prints the calculated sum of the series.
+* The program terminates.
+### **Conclusion**
+The program successfully calculates and displays the sum of the given series based on the value of n entered by the user. The output demonstrates the sum of the series for a specific value of n.
+
+
+---
+---
+<br/>
+<br/> 
+
+<!--  
 >## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
 
 ### **Introduction**
