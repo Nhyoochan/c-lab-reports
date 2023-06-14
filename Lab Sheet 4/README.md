@@ -39,12 +39,12 @@ This lab sheet is a part of the Computer Programming course for Bachelor's in Co
 <br/>
 <br/>
 
-># <span id="q1">1. WAP to get your name, address and display using unformatted I/O.
+>## <span id="q1">1. WAP to get your name, address and display using unformatted I/O.
 </span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to enter their name and address using unformatted I/O functions (gets() and puts()). The program then displays the entered name and address on the console.
-## **Code**
+### **Code**
 ```c
 // [Desc: Reads and prints name and address using unformatted I/O]
 #include <stdio.h>
@@ -69,7 +69,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter your name: John Doe
 Enter your address: 123 Main Street, City
@@ -79,7 +79,7 @@ Name: John Doe
 Address: 123 Main Street, City
 ```
 
-## **Description**
+### **Description**
 * The program declares two character arrays name and address with a maximum length of 100 characters to store the user's name and address.
 * The user is prompted to enter their name using the printf() function.
 * The gets() function is used to read the name entered by the user and store it in the name array.
@@ -88,7 +88,7 @@ Similarly, the user is prompted to enter their address using the printf() functi
 * The program then displays a header "Your details:" using the printf() function.
 * The user's name is displayed using the puts() function, which automatically appends a newline character at the end.
 * The user's address is displayed in a similar manner using the puts() function.
-## **Conclusion**
+### **Conclusion**
 The program successfully demonstrates the use of unformatted I/O functions (gets() and puts()) to read and display the user's name and address. The user is prompted to enter their name and address, and the program stores the input in character arrays. The entered name and address are then printed on the console using the puts() function. The program provides a simple example of how unformatted I/O functions can be used to handle string inputs and outputs.
 
 ---
@@ -96,12 +96,12 @@ The program successfully demonstrates the use of unformatted I/O functions (gets
 <br/>
 <br/>
 
-># <span id="q2">WAP to get a character form the user using unformatted I/O and display the ASCII value of the entered character
+>## <span id="q2">WAP to get a character form the user using unformatted I/O and display the ASCII value of the entered character
 </span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to enter a character and displays its corresponding ASCII value.
-## **Code**
+### **Code**
 ```c
 // [Desc: Reads and prints ASCII value of a character]
 #include <stdio.h>
@@ -119,7 +119,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a character: A
 ASCII value of the entered character is: 65
@@ -133,13 +133,13 @@ Enter a character: x
 ASCII value of the entered character is: 120
 ```
 
-## **Description**
+### **Description**
 * The program begins by declaring a variable ch of type char to store the input character.
 * The user is prompted to enter a character using the printf() function.
 * The input character is read using the scanf() function with the format specifier %c. The &ch notation is used to store the input character in the variable ch.
 * The program uses the printf() function to display the ASCII value of the entered character. The %d format specifier is used to print the decimal value of the character.
 * The program then returns 0, indicating successful execution.
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to read a character from the user and display its ASCII value. It provides a simple way to obtain the numerical representation of a character based on the ASCII encoding scheme.
 
 
@@ -148,11 +148,11 @@ This program demonstrates how to read a character from the user and display its 
 <br/>
 <br/>
 
-># <span id="q3">WAP to display the output as [take a=15, b=20.43, c=35]:</span>
+>## <span id="q3">WAP to display the output as [take a=15, b=20.43, c=35]:</span>
 
-## **Introduction**
+### **Introduction**
 This program displays the values of variables a, b, and c in formatted columns.
-## **Code**
+### **Code**
 ```c
 // [Desc: Prints values of variables in formatted columns]
 #include <stdio.h>
@@ -171,14 +171,14 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 A =     15|15    |    15|15    |    15|15    |    15|15    |    15|15    |
 B =  20.43|20.43 | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 | 20.43|20.43 |
 C =     35|35    |    35|35    |    35|35    |    35|35    |    35|35    |
 ```
 
-## **Description**
+### **Description**
 * The program begins by declaring and initializing three variables: a of type int with a value of 15, b of type float with a value of 20.43, and c of type int with a value of 35.
 * The printf() function is used to display the values of the variables in formatted columns.
 For variable a, the format specifier %6d is used to print the integer values in a field width of 6 characters with right alignment, and %-6d is used for left alignment.
@@ -188,7 +188,7 @@ For variable a, the format specifier %6d is used to print the integer values in 
 * The program includes newline characters (\n) to create separate lines for each variable.
 * The program then returns 0, indicating successful execution.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to display the values of variables in formatted columns. By using appropriate format specifiers and alignment options, the program achieves a neat and organized representation of the variable values. This can be useful for visualizing data in tabular form or aligning output for better readability.
 
 ---
@@ -196,12 +196,12 @@ This program demonstrates how to display the values of variables in formatted co
 <br/>
 <br/>
 
-># <span id="q4">WAP to display the output as below using formatted I/O [take char a[]=”I Love Nepal”].
+>## <span id="q4">WAP to display the output as below using formatted I/O [take char a[]=”I Love Nepal”].
 </span>
 
-## **Introduction**
+### **Introduction**
 This program displays a string in formatted columns using formatted I/O.
-## **Code**
+### **Code**
 ```c
 // [Desc: Prints a string in formatted columns]
 #include <stdio.h>
@@ -225,7 +225,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 I
 I L
@@ -239,7 +239,7 @@ I Love Nepa
 I Love Nepal
 ```
 
-## **Description**
+### **Description**
 * The program declares a character array a and initializes it with the string "I Love Nepal".
 * The printf() function is used to display the string in formatted columns.
 * The format specifier %1.1s is used to print the first character of the string, followed by a newline character (\n).
@@ -247,7 +247,7 @@ I Love Nepal
 * The number 1 represents the field width, which specifies the minimum number of characters to be printed.
 * The program includes newline characters (\n) to create separate lines for each formatted output.
 * The program then returns 0, indicating successful execution
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to print a string in formatted columns using formatted I/O. By using different field widths and format specifiers, the program extracts and prints substrings of varying lengths from the original string. This technique can be useful for formatting text in a specific layout or extracting specific portions of a string for display.
 
 ---

@@ -23,13 +23,13 @@ This lab sheet is a part of the Computer Programming course for Bachelor's in Co
 <br/>
 <br/>
 
-># <span id="q1">1. WAP to display "Hello, World!" in C</span>
+>## <span id="q1">1. WAP to display "Hello, World!" in C</span>
 
 
-## **Introduction**
+### **Introduction**
 This program demonstrates how to display the message "Hello, World!" on the screen using the C programming language.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Hello World program in C]
@@ -41,13 +41,13 @@ int main()
     return 0;
 }
 ```
-## **Possible Output**
+### **Possible Output**
 
 ```
 Hello, World!
 ```
 
-## **Description**
+### **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -58,7 +58,7 @@ Hello, World!
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 The "Hello, World!" program is a basic and fundamental program in any programming language. It serves as a starting point for learning and practicing programming concepts. In this C program, the message "Hello, World!" is displayed using the printf() function, and a newline character ensures that the output appears on a new line.
 
 ---
@@ -66,11 +66,11 @@ The "Hello, World!" program is a basic and fundamental program in any programmin
 <br/>
 <br/>
 
-># <span id="q2"> 2. WAP to display your name, roll number, and address in C </span>
+>## <span id="q2"> 2. WAP to display your name, roll number, and address in C </span>
 
-## **Introduction**
+### **Introduction**
 This program displays your name, roll number, and address using the C programming language.
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Print name, roll number, and address]
@@ -85,7 +85,7 @@ int main()
 }
 
 ```
-## **Possible Output**
+### **Possible Output**
 
 ```
 Name: Tilak Thapa
@@ -93,7 +93,7 @@ Roll Number: PUR079BCT094
 Address: Tulsipur - 4, Dang
 ```
 
-## **Description**
+### **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -104,7 +104,7 @@ Address: Tulsipur - 4, Dang
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to display your name, roll number, and address using the printf() function in C. It serves as a basic example of printing multiple lines of text on the screen. By modifying the values inside the printf() statements, you can personalize the output to display your own information.
 
 ---
@@ -112,12 +112,12 @@ This program demonstrates how to display your name, roll number, and address usi
 <br/>
 <br/>
 
-># <span id="q3"> 3. WAP to add two integer variables and print the sum in C </span>
+>## <span id="q3"> 3. WAP to add two integer variables and print the sum in C </span>
 
-## **Introduction**
+### **Introduction**
 This program calculates the sum of two integer variables and prints the result using the C programming language.
 
-## **Code**
+### **Code**
 ```c
 // [Desc: Sum of two numbers]
 #include <stdio.h>
@@ -132,12 +132,12 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Sum: 30
 ```
 
-## **Description**
+### **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -150,7 +150,7 @@ Sum: 30
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to add two integer variables and print the sum using the printf() function in C. It showcases the basic arithmetic operation of addition and highlights the use of variables to store and manipulate data. In this example, the values 10 and 20 are added together, resulting in a sum of 30, which is then printed on the screen.
 
 ---
@@ -158,12 +158,12 @@ This program demonstrates how to add two integer variables and print the sum usi
 <br/>
 <br/>
 
-># <span id="q4"> 4. WAP to multiply two integer variables and print the product in C </span>
+>## <span id="q4"> 4. WAP to multiply two integer variables and print the product in C </span>
 
-## **Introduction**
+### **Introduction**
 This program calculates the product of two integer variables and prints the result using the C programming language.
 
-## **Code**
+### **Code**
 ```c
 // [Desc: Product of two numbers]
 #include <stdio.h>
@@ -178,7 +178,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Product: 30
 ```
@@ -196,7 +196,7 @@ Product: 30
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to multiply two integer variables and print the product using the printf() function in C. It showcases the basic arithmetic operation of multiplication and highlights the use of variables to store and manipulate data. In this example, the values 5 and 6 are multiplied together, resulting in a product of 30, which is then printed on the screen.
 
 ---
@@ -204,12 +204,12 @@ This program demonstrates how to multiply two integer variables and print the pr
 <br/>
 <br/>
 
-># <span id = "q5"> 5. WAP to calculate and display the simple interest in C </span>
+>## <span id = "q5"> 5. WAP to calculate and display the simple interest in C </span>
 
-## **Introduction**
+### **Introduction**
 This program calculates and displays the simple interest using the C programming language.
 
-## **Code**
+### **Code**
 ```c
 // [Desc: Simple Interest]
 #include <stdio.h>
@@ -225,12 +225,12 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Simple Interest: Rs 137.500000
 ```
 
-## **Description**
+### **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -243,7 +243,7 @@ Simple Interest: Rs 137.500000
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to calculate and display the simple interest using the printf() function in C. It showcases the basic formula for calculating simple interest, which involves the principal amount, interest rate, and time period. In this example, a principal amount of Rs 1000, an interest rate of 5.5%, and a time period of 2.5 years are used to calculate the simple interest, resulting in Rs 137.50 being displayed on the screen.
 
 ---
@@ -251,11 +251,11 @@ This program demonstrates how to calculate and display the simple interest using
 <br/>
 <br/>
 
-># <span id="q6"> 6. WAP to calculate the area of a circle in C </span>
-## **Introduction**
+>## <span id="q6"> 6. WAP to calculate the area of a circle in C </span>
+### **Introduction**
 This program calculates the area of a circle using the C programming language.
 
-## **Code**
+### **Code**
 ```c
 // [Desc: Area of a circle]
 #include <stdio.h>
@@ -270,12 +270,12 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Area of the circle: 19.63 sq unit.
 ```
 
-## **Description**
+### **Description**
 * The program starts with the inclusion of the stdio.h header file, which allows the usage of input/output functions in the C program.
 
 * The main() function is the entry point of the program, and the execution of the program begins from here.
@@ -288,7 +288,7 @@ Area of the circle: 19.63 sq unit.
 
 * The return 0; statement indicates the successful execution of the program. By convention, a return value of 0 indicates that the program terminated without any errors.
 
-## **Conclusion**
+### **Conclusion**
 This program demonstrates how to calculate the area of a circle using the printf() function in C. It showcases the basic formula for calculating the area of a circle, which involves the radius and the constant value of PI. In this example, a radius of 2.5 units is used to calculate the area of the circle, resulting in an area of 19.63 square units being displayed on the screen.
 
 ---

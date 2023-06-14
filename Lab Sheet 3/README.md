@@ -26,13 +26,13 @@ This lab sheet is a part of the Computer Programming course for Bachelor's in Co
 <br/>
 <br/>
 
-># <span id="q1">1. WAP to check whether a number is negative, positive or zero.
+>## <span id="q1">1. WAP to check whether a number is negative, positive or zero.
 </span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a number and determines whether the number is negative, positive, or zero. It utilizes conditional statements (if, else if, and else) to perform the check and provide the corresponding output message.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check whether a number is positive or negative.]
@@ -56,7 +56,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a number: 5
 The number is positive.
@@ -70,7 +70,7 @@ Enter a number: 0
 The number is zero.
 ```
 
-## **Description**
+### **Description**
 * The program begins by declaring a variable number to store the user input.
 * The user is prompted to enter a number using the printf() function.
 * The scanf() function is used to read the user input and store it in the number variable.
@@ -79,7 +79,7 @@ The number is zero.
 * If number is less than 0, the program prints "The number is negative." using the printf() function.
 * If number is neither greater than 0 nor less than 0 (i.e., it is equal to 0), the program prints "The number is zero." using the printf() function.
 * Finally, the program returns 0 to indicate successful execution.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a number and determines whether it is negative, positive, or zero. It demonstrates the use of conditional statements to perform different actions based on the value of a variable. The output message indicates the nature of the entered number.
 
 
@@ -88,12 +88,12 @@ This program allows the user to input a number and determines whether it is nega
 <br/>
 <br/>
 
-># <span id="q2">2. WAP to find maximum between three numbers entered by the user.</span>
+>## <span id="q2">2. WAP to find maximum between three numbers entered by the user.</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input three numbers and finds the maximum among them. It uses conditional statements (if, else if, and else) to compare the numbers and determine the maximum value.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to find the maximum of three numbers.]
@@ -119,7 +119,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter three numbers: 3 5 7
 The maximum number is: 7
@@ -133,7 +133,7 @@ Enter three numbers: 4 8 2
 The maximum number is: 8
 ```
 
-## **Description**
+### **Description**
 * The program declares four variables: num1, num2, num3, and max.
 * The user is prompted to enter three numbers using the printf() function.
 * The scanf() function is used to read the three numbers and store them in the respective variables.
@@ -142,7 +142,7 @@ The maximum number is: 8
 * If num2 is greater than both num1 and num3, it is assigned to max.
 * If neither of the above conditions is true, it means that num3 is the greatest, and it is assigned to max.
 * Finally, the program prints the maximum number using the printf() function.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input three numbers and finds the maximum among them. It demonstrates the use of conditional statements to compare values and determine the maximum. The output displays the maximum number among the three entered numbers.
 
 
@@ -151,12 +151,12 @@ This program allows the user to input three numbers and finds the maximum among 
 <br/>
 <br/>
 
-># <span id="q3">3. WAP to input a character from the user and check whether the character is vowel or consonant.</span>
+>## <span id="q3">3. WAP to input a character from the user and check whether the character is vowel or consonant.</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a character and determines whether the character is a vowel or a consonant. It uses conditional statements (if and else) to check if the character matches any of the vowel characters.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check whether a character is a vowel or a consonant.]
@@ -183,7 +183,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a character: a
 The character is a vowel.
@@ -193,13 +193,13 @@ Enter a character: b
 The character is a consonant.
 ```
 
-## **Description**
+### **Description**
 * The program declares a character variable ch.
 * The user is prompted to enter a character using the printf() function.
 * The scanf() function is used to read the character and store it in the variable ch.
 * The program then uses conditional statements (if and else) to check if the character matches any of the vowel characters.
 * If the character matches any of the vowel characters (both lowercase and uppercase), the program prints that the character is a vowel using the printf() function.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a character and determines whether the character is a vowel or a consonant. It uses conditional statements to compare the character with vowel characters and makes the determination. The output displays whether the entered character is a vowel or a consonant.
 
 ---
@@ -207,12 +207,12 @@ This program allows the user to input a character and determines whether the cha
 <br/>
 <br/>
 
-># <span id="q4">4. WAP to input a character from the user and check whether the character is Alphabet or not. If the character is Alphabet then show whether it is uppercase or lowercase.</span>
+>## <span id="q4">4. WAP to input a character from the user and check whether the character is Alphabet or not. If the character is Alphabet then show whether it is uppercase or lowercase.</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a character and checks whether the character is an alphabet or not. If the character is an alphabet, it further determines whether it is in uppercase or lowercase. It uses conditional statements (if and else) to perform the checks and prints the corresponding output
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check whether a character is an alphabet or not.]
@@ -243,7 +243,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a character: B
 The character is an alphabet.
@@ -259,7 +259,7 @@ Enter a character: 5
 The character is not an alphabet.
 ```
 
-## **Description**
+### **Description**
 * The program declares a character variable ch.
 * The user is prompted to enter a character using the printf() function.
 * The scanf() function is used to read the character and store it in the variable ch.
@@ -268,7 +268,7 @@ The character is not an alphabet.
 * Based on the ASCII range, the program further checks whether the character is in uppercase or lowercase and prints the corresponding output using the printf() function.
 * If the character does not fall within the ASCII range of alphabets, it is considered a non-alphabetic character, and the program prints that the character is not an alphabet using the printf() function.
 
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a character and checks whether the character is an alphabet or not. If it is an alphabet, the program determines whether it is in uppercase or lowercase. The output displays whether the entered character is an alphabet, along with its case if applicable. If the character is not an alphabet, the program indicates that as well.
 
 
@@ -277,12 +277,12 @@ This program allows the user to input a character and checks whether the charact
 <br/>
 <br/>
 
-># <span id="q5">5. WAP to check whether the year entered by the user is leap year or not.</span>
+>## <span id="q5">5. WAP to check whether the year entered by the user is leap year or not.</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a year and checks whether the year is a leap year or not. It uses conditional statements (if and else) to perform the necessary checks based on the rules of leap years.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check whether a year is a leap year or not.]
@@ -312,7 +312,7 @@ int main() {
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a year: 2020
 2020 is a leap year.
@@ -322,7 +322,7 @@ Enter a year: 2021
 2021 is not a leap year.
 ```
 
-## **Description**
+### **Description**
 * The program declares an integer variable year.
 * The user is prompted to enter a year using the printf() function.
 * The scanf() function is used to read the year and store it in the variable year.
@@ -334,7 +334,7 @@ Enter a year: 2021
 * If the year is divisible by 4 but not by 100, it is a leap year and the program prints that.
 * If the year is not divisible by 4, it is not a leap year and the program prints that.
 * The program uses appropriate printf() statements to display the result based on the checks performed.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a year and checks whether the year is a leap year or not. It follows the rules of leap years and uses conditional statements to perform the necessary checks. The output indicates whether the entered year is a leap year or not.
 
 
@@ -343,12 +343,12 @@ This program allows the user to input a year and checks whether the year is a le
 <br/>
 <br/>
 
-># <span id="q6">6. WAP to check whether the number entered by the user is divisible by 5 and 11 or not.</span>
+>## <span id="q6">6. WAP to check whether the number entered by the user is divisible by 5 and 11 or not.</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a number and checks whether the number is divisible by both 5 and 11. It uses the modulus operator % to determine the remainder when the number is divided by 5 and 11. If the remainder is 0 for both divisions, then the number is divisible by both 5 and 11.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check whether a number is divisible by 5 and 11.]
@@ -374,7 +374,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a number: 55
 55 is divisible by 5 and 11.
@@ -384,7 +384,7 @@ Enter a number: 25
 25 is not divisible by 5 and 11.
 ```
 
-## **Description**
+### **Description**
 * The program declares an integer variable number.
 * The user is prompted to enter a number using the printf() function.
 * The scanf() function is used to read the number and store it in the variable number.
@@ -393,7 +393,7 @@ Enter a number: 25
 * If the condition is true, the program prints that the number is divisible by 5 and 11 using the printf() function.
 * If the condition is false, the program prints that the number is not divisible by 5 and 11.
 * The program uses appropriate printf() statements to display the result based on the divisibility checks.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a number and checks whether the number is divisible by both 5 and 11. It uses the modulus operator % to determine the remainder and performs the necessary checks using the conditional statement if. The output indicates whether the entered number is divisible by both 5 and 11 or not.
 
 
@@ -402,13 +402,13 @@ This program allows the user to input a number and checks whether the number is 
 <br/>
 <br/>
 
-># <span id="q7">7. WAP to find the all the roots of a quadratic equation</span>
+>## <span id="q7">7. WAP to find the all the roots of a quadratic equation</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input the coefficients of a quadratic equation (a, b, c) and calculates the roots of the equation. It uses the quadratic formula and considers different cases based on the discriminant to determine the nature of the roots.
 
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to find the roots of a quadratic equation.]
@@ -452,7 +452,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter the coefficients of the quadratic equation (a, b, c): 2 -7 3
 Roots are real and different:
@@ -471,7 +471,7 @@ Root 1 = -1.00 + 2.00i
 Root 2 = -1.00 - 2.00i
 ```
 
-## **Description**
+### **Description**
 * The program declares variables a, b, and c to store the coefficients of the quadratic equation, and variables discriminant, root1, root2, realPart, and imaginaryPart to store intermediate and final values.
 * The user is prompted to enter the coefficients of the quadratic equation using the printf() function.
 * The scanf() function is used to read the coefficients and store them in the respective variables.
@@ -481,7 +481,7 @@ Root 2 = -1.00 - 2.00i
 * If the discriminant is equal to 0, the program calculates the real and same root and displays it.
 * If the discriminant is less than 0, indicating complex roots, the program calculates the real and imaginary parts of the roots and displays them.
 * The program uses appropriate printf() statements to display the nature and values of the roots based on the calculations.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input the coefficients of a quadratic equation and calculates the roots of the equation based on the nature of the roots (real and different, real and same, or complex). It uses the quadratic formula and conditional statements to perform the necessary calculations and displays the roots using appropriate printf() statements. The output provides information about the nature and values of the roots of the quadratic equation.
 
 
@@ -490,13 +490,13 @@ This program allows the user to input the coefficients of a quadratic equation a
 <br/>
 <br/>
 
-># <span id="q8">8. WAP to input two numbers and operator among [ + , - ,* , / ]. If user enters + then the program should perform the addition of the number and display the sum. If user enters – then the program should perform subtraction of number and display the difference and so on for * and /.
+>## <span id="q8">8. WAP to input two numbers and operator among [ + , - ,* , / ]. If user enters + then the program should perform the addition of the number and display the sum. If user enters – then the program should perform subtraction of number and display the difference and so on for * and /.
 </span>
 
-## **Introduction**
+### **Introduction**
 This program acts as a simple calculator that allows the user to input two numbers and an operator (+, -, *, /). Based on the operator entered, the program performs the corresponding arithmetic operation and displays the result.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to make a simple calculator.]
@@ -549,7 +549,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter the first number: 5
 Enter the second number: 3
@@ -587,7 +587,7 @@ Enter the operator (+, -, *, /): %
 Error: Invalid operator.
 ```
 
-## **Description**
+### **Description**
 * The program declares variables num1, num2, and result to store the input numbers and the calculated result, respectively.
 * The program also declares a variable operator of type char to store the input operator.
 * The user is prompted to enter the first number using the printf() function, and the input is read and stored using the scanf() function.
@@ -600,7 +600,7 @@ Error: Invalid operator.
 * If the operator is '/', the program checks if the second number is not zero to avoid division by zero. If it's not zero, division is performed and the result is stored.
 * If the operator is none of the above, an invalid operator error message is displayed.
 * The program uses the printf() function to display the result or error message.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to perform basic arithmetic operations (+, -, *, /) on two input numbers. It utilizes a switch statement to determine the appropriate operation based on the operator entered. The program performs the calculation and displays the result or error message, depending on the user's input.
 
 
@@ -609,12 +609,12 @@ This program allows the user to perform basic arithmetic operations (+, -, *, /)
 <br/>
 <br/>
 
-># <span id="q9">9. WAP in C to input marks of five subjects C-programming, Physics, Maths, Applied Mechanics and Basic electrical. Display whether the student passed or failed. Take F.M=100 and P.M.=40 For passed students calculate percentage and grade according to following:Percentage >= 90% : A Percentage >=80% : B Percentage >= 70% : C Percentage >= 60% : D Percentage >= 40% : E</span>
+>## <span id="q9">9. WAP in C to input marks of five subjects C-programming, Physics, Maths, Applied Mechanics and Basic electrical. Display whether the student passed or failed. Take F.M=100 and P.M.=40 For passed students calculate percentage and grade according to following:Percentage >= 90% : A Percentage >=80% : B Percentage >= 70% : C Percentage >= 60% : D Percentage >= 40% : E</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input marks for five subjects: C Programming, Physics, Maths, Applied Mechanics, and Basic Electrical. It then calculates the total marks obtained, the percentage, and assigns a grade based on the percentage. The program also determines whether the student passed or failed based on the passing marks criteria.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to calculate the grade of a student.]
@@ -682,7 +682,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter marks for C Programming, Physics, Maths, Applied Mechanics, and Basic Electrical: 55 65 70 60 35
 Sorry, you have failed.
@@ -694,7 +694,7 @@ Percentage: 80.00%
 Grade: B
 ```
 
-## **Description**
+### **Description**
 * The program declares variables to store the marks for each subject: cProgramming, physics, maths, appliedMechanics, and basicElectrical.
 * The program also declares variables for the full marks (FM), passing marks (PM), total marks obtained, percentage, and grade.
 * The user is prompted to enter the marks for each subject using the printf() function, and the values are stored using the scanf() function.
@@ -704,7 +704,7 @@ Grade: B
 * If the student has not failed, the program calculates the percentage by dividing the total marks obtained by the product of full marks and the number of subjects.
 * Based on the percentage, the program assigns a grade using if and else if statements.
 * Finally, the program displays a success message, the calculated percentage, and the assigned grade using the printf() function.
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input marks for five subjects and calculates the total marks obtained, percentage, and grade. It checks if any subject marks exceed the full marks or are below the passing marks. If the student has not failed, it assigns a grade based on the percentage and displays the result.
 
 
@@ -713,12 +713,12 @@ This program allows the user to input marks for five subjects and calculates the
 <br/>
 <br/>
 
-># <span id="q10">10. WAP to input a number from user. If user enters a number less than or equal to zero then program should just display the number. If user enters 1 the program should display output as neither prime nor composite, if user enters 2 the program should display output as smallest and only even prime number. If user enters any number greater than 2 the program should check whether the number is prime or not, also if the number is not prime the program should display whether it is even or odd</span>
+>## <span id="q10">10. WAP to input a number from user. If user enters a number less than or equal to zero then program should just display the number. If user enters 1 the program should display output as neither prime nor composite, if user enters 2 the program should display output as smallest and only even prime number. If user enters any number greater than 2 the program should check whether the number is prime or not, also if the number is not prime the program should display whether it is even or odd</span>
 
-## **Introduction**
+### **Introduction**
 This program allows the user to input a number and checks whether the number is prime or not. It also provides additional information if the number is not prime, such as whether it is even or odd. The program handles different scenarios based on the input number.
 
-## **Code**
+### **Code**
 
 ```c
 // [Desc: Program to check if a number is prime or not.]
@@ -787,7 +787,7 @@ int main()
 }
 ```
 
-## **Possible Output**
+### **Possible Output**
 ```
 Enter a number: 0
 Number: 0
@@ -815,7 +815,7 @@ Number is not prime
 Number is odd
 ```
 
-## **Description**
+### **Description**
 * The program declares variables to store the input number (number) and a flag to track whether the number is prime (isPrime).
 * The user is prompted to enter a number using the printf() function, and the value is stored using the scanf() function.
 * The program then checks different scenarios based on the input number:
@@ -831,7 +831,7 @@ Number is odd
 * If the remainder is not 0, it displays "Number is odd."
 * The program ends with the return 0; statement.
 
-## **Conclusion**
+### **Conclusion**
 This program allows the user to input a number and determines whether it is prime or not. It handles different scenarios and provides appropriate output based on the input number.
 
 

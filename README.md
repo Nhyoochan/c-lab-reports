@@ -1,4 +1,4 @@
-# Comprehensive C Programming Lab Solutions Repository - By jTtilak
+# Comprehensive C Programming Lab Report Repository - By jrTilak
 
 ## Description
 Welcome to the Comprehensive C Programming Lab Report Repository, curated by jrTilak. This repository is designed to provide a comprehensive collection of solutions for the C Programming lab assignments, covering various topics and concepts. Whether you are a student studying at Tribhuvan University's Institute of Engineering or an aspiring programmer, this repository is a valuable resource for enhancing your understanding and practical skills in C programming.
@@ -52,12 +52,10 @@ By utilizing this repository, you can enhance your understanding of C programmin
 ---
 ## [**LAB SHEET NO.2 [To be familiar Data types, Constants, Operators and Expressions]**](./Lab%20Sheet%202/)
 
-1. [WAP to declare integer, float and character variable. Initialize them with certainvalue ](./Lab%20Sheet%202/#1)
-and print those values. Also display the size of variables.
+1. [WAP to declare integer, float and character variable. Initialize them with certain value and print those values. Also display the size of variables. ](./Lab%20Sheet%202/#1)
 2. [WAP to swap the values of the variable with and without using third variable.](./Lab%20Sheet%202/#2)
 3. [WAP to calculate the area and volume of a cylinder using pre-processor directive for value of PI.](./Lab%20Sheet%202/#q3)
-4. [WAP to input two numbers from user and display the minimum using conditional ](./Lab%20Sheet%202/#q4)
-operator.
+4. [WAP to input two numbers from user and display the minimum using conditional operator. ](./Lab%20Sheet%202/#q4)
 5. [WAP to display whether a number is even or odd using conditional operator](./Lab%20Sheet%202/#q5)
 6. [What are the output of the following programs:](./Lab%20Sheet%202/#q6)
    ```c
