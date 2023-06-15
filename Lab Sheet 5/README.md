@@ -289,6 +289,127 @@ The program successfully calculates and displays the sum of the given series bas
 <br/>
 <br/> 
 
+ 
+>## <span id="q5">5. WAP to display sum of series: 1 + 1/2! + 1/3! + 1/4! + 1/5! ... 1/n! </span>
+
+### **Introduction**
+This program calculates the sum of the series: 1 + 1/2! + 1/3! + 1/4! + 1/5! + ... + 1/n!, where n is the value provided by the user. The series involves computing the factorial of each term in the denominator.
+### **Code**
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n, factorial = 1;
+    float sum = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        factorial *= i;
+        sum += 1 / (float)factorial;
+    }
+
+    printf("The sum of series: 1 + 1/2! + 1/3! + 1/4! + 1/5! ... 1/n! is %f", sum);
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter the value of n: 5
+The sum of series: 1 + 1/2! + 1/3! + 1/4! + 1/5! ... 1/n! is 1.716667
+```
+
+### **Description**
+* The user is prompted to enter the value of n.
+* The entered value is stored in the variable n.
+* The program initializes the variable factorial as 1 to calculate the factorial of each term in the series.
+* The program initializes the variable sum as 0 to store the sum of the series.
+* The for loop is used to iterate from 1 to n.
+* Inside the loop, the program calculates the factorial of the current value i by multiplying it with the previous factorial.
+* The reciprocal of the current factorial is added to the sum.
+* Since the division is between an integer (1) and a float ((float)factorial), the result is automatically converted to a float, ensuring the decimal values are considered in the sum.
+* After the loop finishes, the program prints the calculated sum of the series.
+* The program terminates.
+### **Conclusion**
+The program successfully calculates and displays the sum of the given series based on the value of n entered by the user. The output demonstrates the sum of the series for a specific value of n by computing the factorials of the terms in the denominator.
+
+
+---
+---
+<br/>
+<br/> 
+
+
+
+>## <span id="q6">6.WAP to display sum of series: x + x2/2! + x3/3! + x4/4! + x5/5! ... xn/n!</span>
+
+### **Introduction**
+This program calculates the sum of the series: x + x^2/2! + x^3/3! + x^4/4! + x^5/5! + ... + x^n/n!, where x and n are the values provided by the user. The series involves raising x to different powers and dividing by the corresponding factorials.
+
+### **Code**
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float x, sum = 0;
+    int n, factorial = 1;
+
+    printf("Enter the value of x: ");
+    scanf("%f", &x);
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        factorial *= i;
+        sum += (pow(x, i) / factorial);
+    }
+
+    printf("The sum of series: x + x^2/2! + x^3/3! + x^4/4! + x^5/5! ... x^n/n! is %f.", sum);
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter the value of x: 2
+Enter the value of n: 5
+The sum of series: x + x^2/2! + x^3/3! + x^4/4! + x^5/5! ... x^n/n! is 10.266667.
+```
+
+### **Description**
+* The user is prompted to enter the value of x.
+* The entered value is stored in the variable x.
+* The user is prompted to enter the value of n.
+* The entered value is stored in the variable n.
+* The program initializes the variable factorial as 1 to calculate the factorial of each term in the series.
+* The program initializes the variable sum as 0 to store the sum of the series.
+* The for loop is used to iterate from 1 to n.
+* Inside the loop, the program calculates the factorial of the current value i by multiplying it with the previous factorial.
+* The program raises x to the power of the current value i using the pow function and divides it by the current factorial.
+* The resulting value is added to the sum.
+* After the loop finishes, the program prints the calculated sum of the series.
+* The program terminates.
+### **Conclusion**
+The program successfully calculates and displays the sum of the given series based on the values of x and n entered by the user. The output demonstrates the sum of the series for a specific value of x and n by raising x to different powers and dividing by the corresponding factorials.
+
+
+---
+---
+<br/>
+<br/> 
+
+
 <!--  
 >## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
 
