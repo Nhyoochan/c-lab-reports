@@ -410,6 +410,165 @@ The program successfully calculates and displays the sum of the given series bas
 <br/> 
 
 
+  
+>## <span id="q7">7. WAP to find the value cos(x) without using cos(x) library function.</span>
+
+### **Introduction**
+This program calculates the value of cos(x) without using the cos(x) library function. It uses the Taylor series expansion of cos(x) to approximate the value. The program takes the value of x in degrees, converts it to radians, and then uses the series approximation to calculate cos(x).
+### **Code**
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n = 1;
+    float term = 1, factorial, x, cosx = 1;
+    printf("Enter the value of x (in degrees): ");
+    scanf("%f", &x);
+    float x_in_deg = x;
+    /* Converting degrees to radians */
+    x = x * (3.142 / 180.0);
+
+    do
+    {
+        factorial = 2 * n * (2 * n - 1);
+        term = -term * x * x / factorial;
+        cosx = cosx + term;
+        n++;
+    } while (n < 999);
+
+    printf("Cos(%.2fdeg):  %.2f\n", x_in_deg, cosx);
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter the value of x (in degrees): 45
+Cos(45.00deg):  0.71
+```
+
+### **Description**
+* The user is prompted to enter the value of x in degrees.
+* The entered value is stored in the variable x.
+* The program creates a variable x_in_deg to store the original value of x in degrees for display purposes.
+* The program converts the value of x from degrees to radians by multiplying it by (3.142 / 180.0) (approximation of π/180).
+* The program initializes variables n as 1, term as 1, factorial, and cosx as 1.
+* The program enters a do-while loop.
+* Inside the loop, the program calculates the factorial of the current value of n using the formula 2 * n * (2 * n - 1).
+* The program calculates the term of the series approximation by multiplying the previous term with -x * x and dividing by the factorial.
+* The program adds the term to cosx.
+* The program increments n by 1.
+* The loop continues until n reaches 999.
+* After the loop finishes, the program prints the calculated value of cos(x) for the original value of x in degrees.
+* The program terminates.
+
+
+### **More on Taylor Series**
+The Taylor series is a representation of a function as an infinite sum of terms, where each term is calculated based on the derivatives of the function at a specific point. For cos(x), the Taylor series expansion is as follows:
+
+cos(x) = 1 - (x^2)/2! + (x^4)/4! - (x^6)/6! + ...
+
+In this expansion, each term is obtained by taking alternating powers of x and dividing it by the factorial of an even number. The alternating signs (+/-) in the series are crucial for approximating the cosine function accurately.
+
+In the program, the Taylor series is implemented using a loop. The loop starts with an initial value of n = 1 and a term value of 1, representing the first term in the series (which is always 1). Then, in each iteration of the loop, the program calculates the factorial of 2n(2n-1) and updates the term by multiplying it with -x^2 and dividing by the factorial. Finally, the term is added to the cosx variable.
+
+By repeating this process for a sufficient number of terms (in this case, until n reaches 999), the program approximates the value of cos(x). The more terms included in the series, the closer the approximation becomes to the actual value of cos(x).
+
+It's important to note that the Taylor series is an approximation, and the accuracy of the approximation depends on the number of terms used. Using more terms in the series will yield a more accurate result but also requires more computational effort. In this program, a fixed number of terms is used for simplicity, but in practice, the number of terms can be adjusted based on the desired level of accuracy.
+
+By using the Taylor series expansion, this program demonstrates how we can calculate an approximation of cos(x) without relying on the built-in cos(x) function, making it a useful technique for situations where the cosine function is not readily available or for educational purposes to understand the underlying principles of approximating functions using series expansions.
+
+### **Conclusion**
+The program successfully calculates and displays the approximate value of cos(x) based on the Taylor series expansion. It provides an approximation of cos(x) without using the cos(x) library function by using a series of terms that converge to the value of cos(x). The output demonstrates the calculated value of cos(x) for a given value of x entered by the user in degrees.
+
+
+---
+---
+<br/>
+<br/> 
+
+
+<!--  
+>## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+
+### **Introduction**
+
+### **Code**
+
+```c
+
+```
+### **Possible Output**
+
+```
+
+```
+
+### **Description**
+
+### **Conclusion**
+
+---
+---
+<br/>
+<br/> -->
+
+
+<!--  
+>## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+
+### **Introduction**
+
+### **Code**
+
+```c
+
+```
+### **Possible Output**
+
+```
+
+```
+
+### **Description**
+
+### **Conclusion**
+
+---
+---
+<br/>
+<br/> -->
+
+
+<!--  
+>## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+
+### **Introduction**
+
+### **Code**
+
+```c
+
+```
+### **Possible Output**
+
+```
+
+```
+
+### **Description**
+
+### **Conclusion**
+
+---
+---
+<br/>
+<br/> -->
+
+
 <!--  
 >## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
 
