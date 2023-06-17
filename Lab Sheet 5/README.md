@@ -576,30 +576,77 @@ The program successfully determines whether the given number is an Armstrong num
 <br/>
 
 
-<!--  
->## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+ 
+>## <span id="q9">1.WAP to display the first n terms of Fibonacci series.</span>
 
 ### **Introduction**
-
+This program displays the first n terms of the Fibonacci series. The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones, starting with 0 and 1.
 ### **Code**
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int n, fibonacci_term = 0, n_1, n_2;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series to %dth term: \n", n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (i == 1)
+        {
+            fibonacci_term = 0;
+        }
+        else if (i == 2)
+        {
+            n_1 = fibonacci_term;
+            fibonacci_term = 1;
+        }
+        else
+        {
+            n_2 = n_1;
+            n_1 = fibonacci_term;
+            fibonacci_term = n_2 + n_1;
+        }
+        printf("%d ", fibonacci_term);
+    }
+
+    return 0;
+}
 ```
 ### **Possible Output**
 
 ```
-
+Enter a number: 10
+Fibonacci Series to 10th term:
+0 1 1 2 3 5 8 13 21 34
 ```
 
 ### **Description**
-
+* The user is prompted to enter a number.
+* The entered number is stored in the variable n.
+* The program initializes the variable fibonacci_term to store the current term of the Fibonacci series.
+* The program initializes the variables n_1 and n_2 to store the (n-1)th and (n-2)th terms of the Fibonacci series, respectively.
+* The program enters a for loop that iterates from 1 to n.
+* Inside the loop, the program checks the value of i to determine the current term of the Fibonacci series.
+* If i is 1, the current term is set to 0 (the first term of the series).
+* If i is 2, the current term is set to 1 (the second term of the series) and the value of n_1 is updated to the previous term.
+* If i is greater than 2, the program updates the values of n_2, n_1, and fibonacci_term to calculate the current term by adding the (n-1)th and (n-2)th terms.
+* The program then prints the current term of the Fibonacci series.
+* Steps 6-10 are repeated for each term of the series up to n.
+* The program terminates.
 ### **Conclusion**
+The program successfully displays the first n terms of the Fibonacci series. It calculates each term of the series by adding the two preceding terms. The output shows the Fibonacci series up to the nth term based on the user's input.
+
 
 ---
 ---
 <br/>
-<br/> -->
+<br/> 
 
 
 <!--  
