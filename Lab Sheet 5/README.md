@@ -490,31 +490,90 @@ The program successfully calculates and displays the approximate value of cos(x)
 <br/>
 <br/> 
 
-
-<!--  
->## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+ 
+>## <span id="q8">8. WAP to display weather a number is Armstrong or not.</span>
 
 ### **Introduction**
-
+This program checks whether a given number is an Armstrong number or not. An Armstrong number is a number that is equal to the sum of its own digits, each raised to the power of the number of digits.
 ### **Code**
 
 ```c
+#include <stdio.h>
+#include <math.h>
 
+int main()
+{
+    int num, rem, armstrong = 0, count = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int org_num = num;
+
+    while (org_num != 0)
+    {
+        org_num /= 10;
+        count++;
+    }
+
+    org_num = num;
+
+    while (org_num != 0)
+    {
+        rem = org_num % 10;
+        org_num /= 10;
+        armstrong += pow(rem, count);
+    }
+
+    if (num == armstrong)
+    {
+        printf("%d is an Armstrong number.", num);
+    }
+    else
+    {
+        printf("%d is not an Armstrong number.", num);
+    }
+
+    return 0;
+}
 ```
 ### **Possible Output**
 
 ```
-
+Enter a number: 153
+153 is an Armstrong number.
+```
+```
+Enter a number: 155
+155 is an Armstrong number.
 ```
 
 ### **Description**
-
+* The user is prompted to enter a number.
+* The entered number is stored in the variable num.
+* The original value of num is also stored in the variable org_num for later comparison.
+* The program initializes the variable rem to store the remainder of each digit.
+* The program initializes the variable armstrong to 0, which will accumulate the sum of the digits raised to the power of the count.
+* The program initializes the variable count to 0, which will count the number of digits in the number.
+* The program enters a while loop that divides org_num by 10 and updates it until org_num becomes 0. This loop counts the number of digits in the number.
+* After the first loop finishes, the variable count will contain the number of digits in the number.
+* The program resets org_num to the original value of num.
+* The program enters another while loop that calculates the remainder of org_num divided by 10 using the modulo operator %.
+* The program then updates org_num by dividing it by 10, effectively removing the last digit.
+* The power of the remainder is calculated using the pow() function from the math.h library and added to armstrong.
+* Steps 10-12 are repeated for each digit of the number.
+* After the second loop finishes, the program checks if num is equal to armstrong.
+* If they are equal, it means the number is an Armstrong number, and a corresponding message is displayed.
+* If they are not equal, it means the number is not an Armstrong number, and a corresponding message is displayed.
+* The program terminates.
 ### **Conclusion**
+The program successfully determines whether the given number is an Armstrong number or not. It calculates the sum of the digits raised to the power of the count, and compares it to the original number. The output indicates whether the number is an Armstrong number or not based on the comparison result.
+
 
 ---
 ---
 <br/>
-<br/> -->
+<br/>
 
 
 <!--  
