@@ -648,31 +648,62 @@ The program successfully displays the first n terms of the Fibonacci series. It 
 <br/>
 <br/> 
 
-
-<!--  
->## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+  
+>## <span id="q10">10. WAP to display the number in reverse order.</span>
 
 ### **Introduction**
-
+This program displays a number in reverse order. It takes an integer input from the user and then reverses the order of its digits.
 ### **Code**
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num, reversed;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("Before Reversing: %d\n", num);
+
+    for (reversed = 0; num != 0; num /= 10)
+    {
+        reversed = (reversed * 10) + (num % 10);
+    }
+
+    printf("After Reversing: %d\n", reversed);
+
+    return 0;
+}
 ```
 ### **Possible Output**
 
 ```
-
+Enter a number: 12345
+Before Reversing: 12345
+After Reversing: 54321
 ```
 
 ### **Description**
-
+* The user is prompted to enter a number.
+* The entered number is stored in the variable num.
+* The program prints the original number before reversing.
+* A for loop is used to reverse the number:
+* The variable reversed is initialized to 0.
+* The loop continues as long as num is not equal to 0.
+* In each iteration, the last digit of num (obtained by taking the modulus with 10) is added to reversed after shifting its digits left by multiplying by 10.
+* The last digit of num is removed by dividing it by 10.
+* The loop continues until all the digits of num have been reversed.
+* The program prints the reversed number.
+* The program terminates.
 ### **Conclusion**
+The program successfully reverses the digits of a given number. It uses a for loop to extract the last digit of the number, add it to the reversed number, and remove the last digit. This process is repeated until all the digits are reversed. The output displays the original number and the reversed number.
+
 
 ---
 ---
 <br/>
-<br/> -->
 
 
 <!--  
