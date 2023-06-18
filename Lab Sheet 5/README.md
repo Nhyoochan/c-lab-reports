@@ -705,6 +705,98 @@ The program successfully reverses the digits of a given number. It uses a for lo
 ---
 <br/>
 
+ 
+>## <span id="q11">11. WAP to check whether a number is a palindrome or not.</span>
+
+### **Introduction**
+This program checks whether a number is a palindrome or not. A palindrome number is a number that remains the same when its digits are reversed.
+### **Code**
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int num, reversed = 0, org_num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    org_num = num;
+
+    for (; num != 0; num /= 10)
+    {
+        reversed = (reversed * 10) + (num % 10);
+    }
+
+    if (org_num == reversed)
+    {
+        printf("%d is a palindrome number.", org_num);
+    }
+    else
+    {
+        printf("%d is not a palindrome number.", org_num);
+    }
+
+    return 0;
+}
+```
+### **Possible Output**
+
+```
+Enter a number: 12321
+12321 is a palindrome number.
+```
+
+### **Description**
+* The user is prompted to enter a number.
+* The entered number is stored in the variable num.
+* The variable org_num is assigned the value of num to keep a copy of the original number for comparison later.
+* A for loop is used to reverse the number:
+* The variable reversed is initialized to 0.
+* The loop continues as long as num is not equal to 0.
+* In each iteration, the last digit of num (obtained by taking the modulus with 10) is added to reversed after shifting its digits left by multiplying by 10.
+* The last digit of num is removed by dividing it by 10.
+* The loop continues until all the digits of num have been reversed.
+* The program compares the original number (org_num) with the reversed number (reversed) to check if they are equal.
+* If the numbers are equal, the program prints that it is a palindrome number.
+* If the numbers are not equal, the program prints that it is not a palindrome number.
+* The program terminates.
+### **Conclusion**
+The program successfully checks whether a given number is a palindrome or not. It uses a for loop to reverse the digits of the number and stores the reversed number in a separate variable. Then it compares the original number with the reversed number to determine if they are equal. The output displays whether the number is a palindrome or not based on the comparison result.
+
+
+---
+---
+<br/>
+<br/>
+
+
+<!--  
+>## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+
+### **Introduction**
+
+### **Code**
+
+```c
+
+```
+### **Possible Output**
+
+```
+
+```
+
+### **Description**
+
+### **Conclusion**
+
+---
+---
+<br/>
+<br/> -->
+
 
 <!--  
 >## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
