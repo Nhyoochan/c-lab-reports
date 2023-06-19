@@ -114,8 +114,67 @@ By utilizing this repository, you can enhance your understanding of C programmin
 
 ---
 ---
-<!-- ## [**LAB SHEET NO.5 [To be familiar with LOOPS]**](./Lab%20Sheet%205/)
-## [**LAB SHEET NO.6 [To be familiar with FUNCTIONS:]**](./Lab%20Sheet%206/)
+## [**LAB SHEET NO.5 [To be familiar with LOOPS]**](./Lab%20Sheet%205/)
+
+1. [WAP to read 10 numbers from user and find their sum and average. ](./Lab%20Sheet%205/#q1)
+2. [WAP to display the multiplication table of integer given by the user. ](./Lab%20Sheet%205/#q2)
+3. [WAP to input two integer values from the user and print the even number between the range of integers. Also count the even number and display the count as well [Hint: if user enters 10 and 100. The program should print and count even numbers between 10 and 100]. ](./Lab%20Sheet%205/#q3)
+4. [WAP to display sum of series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n ](./Lab%20Sheet%205/#q4)
+5. [WAP to display sum of series: 1 + 1/2! + 1/3! + 1/4! + 1/5! ... 1/n! ](./Lab%20Sheet%205/#q5)
+6. [WAP to display sum of series: x + x2/2! + x3/3! + x4/4! + x5/5! ... xn/n! ](./Lab%20Sheet%205/#q6)
+7. [WAP to find the value cos(x) without using cos(x) library function. ](./Lab%20Sheet%205/#q7)
+8. [WAP to display weather a number is Armstrong or not. ](./Lab%20Sheet%205/#q8)
+9. [WAP to display the first n terms of Fibonacci series. ](./Lab%20Sheet%205/#q9)
+10.  [WAP to display the number in reverse order. ](./Lab%20Sheet%205/#q10)
+11.  [WAP to check whether a number is a palindrome or not. ](./Lab%20Sheet%205/#q11)
+12.  [WAP to find HCF and LCM of two numbers. ](./Lab%20Sheet%205/#q12)
+13.  [WAP to print the following patterns](./Lab%20Sheet%205/#q13)
+```
+Pattern 1: 
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+Pattern 2: 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+Pattern 3: 
+    *
+   ***
+  *****
+ *******
+*********
+
+Pattern 4: 
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+Pattern 5: 
+1 2 3 4 5 4 3 2 1 
+  1 2 3 4 3 2 1 
+    1 2 3 2 1 
+      1 2 1 
+        1
+
+Pattern 6: 
+5 4 3 2 1 
+5 4 3 2
+5 4 3
+5 4
+5
+```
+
+
+<!-- ## [**LAB SHEET NO.6 [To be familiar with FUNCTIONS:]**](./Lab%20Sheet%206/)
 ## [**LAB SHEET NO.7 [To be familiar with Array]**](./Lab%20Sheet%207/)
 ## [**LAB SHEET NO.8 [To be familiar with Pointers]**](./Lab%20Sheet%208/)
 ## [**LAB SHEET NO.9 [To be familiar with Structure]**](./Lab%20Sheet%209/)

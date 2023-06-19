@@ -773,7 +773,7 @@ The program successfully checks whether a given number is a palindrome or not. I
 
 
  
->## <span id="q11">1. WAP to find HCF and LCM of two numbers.</span>
+>## <span id="q12">12. WAP to find HCF and LCM of two numbers.</span>
 
 ### **Introduction**
 This program calculates the Highest Common Factor (HCF) and the Least Common Multiple (LCM) of two numbers.
@@ -852,30 +852,264 @@ The program successfully calculates the HCF and LCM of two given numbers. It det
 ---
 ---
 <br/>
-<br/> -->
+<br/> 
 
-
-<!--  
->## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+ 
+>## <span id="q12">13. WAP to read 10 numbers from user and find their sum and average.</span>
 
 ### **Introduction**
+This program prints several patterns using loops and nested loops.
 
 ### **Code**
 
 ```c
+#include <stdio.h>
 
+void pattern1();
+void pattern2();
+void pattern3();
+void pattern4();
+void pattern5();
+void pattern6();
+
+int main()
+{
+    printf("\nPattern 1: \n");
+    pattern1();
+    printf("\nPattern 2: \n");
+    pattern2();
+    printf("\nPattern 3: \n");
+    pattern3();
+    printf("\nPattern 4: \n");
+    pattern4();
+    printf("\nPattern 5: \n");
+    pattern5();
+    printf("\nPattern 6: \n");
+    pattern6();
+
+    return 0;
+}
+
+void pattern1()
+{
+    for (int row = 1; row <= 5; row++)
+    {
+        for (int col = 1; col <= row; col++)
+        {
+            printf("%d ", col);
+        }
+        printf("\n");
+    }
+}
+
+void pattern2()
+{
+    for (int row = 5; row > 0; row--)
+    {
+        for (int col = 1; col <= row; col++)
+        {
+            printf("%d ", col);
+        }
+        printf("\n");
+    }
+}
+
+void pattern3()
+{
+    for (int row = 1; row <= 5; row++)
+    {
+        for (int spaces = 5 - row; spaces > 0; spaces--)
+        {
+            printf(" ");
+        }
+
+        for (int stars = 1; stars <= 2 * row - 1; stars++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+void pattern4()
+{
+    int num = 1;
+    for (int row = 1; row <= 5; row++)
+    {
+        for (int col = 1; col <= row; col++)
+        {
+            printf("%d ", num);
+            num++;
+        }
+
+        printf("\n");
+    }
+}
+
+void pattern5()
+{
+    for (int row = 1; row <= 5; row++)
+    {
+        for (int spaces = 1; spaces < row; spaces++)
+        {
+            printf(" ");
+        }
+        for (int num1 = 1; num1 <= 6 - row; num1++)
+        {
+            printf("%d", num1);
+        }
+        for (int num2 = 5 - row; num2 > 0; num2--)
+        {
+            printf("%d", num2);
+        }
+        printf("\n");
+    }
+}
+
+void pattern6()
+{
+    for (int row = 5; row > 0; row--)
+    {
+        for (int col = 5; col >= 6 - row; col--)
+        {
+            printf("%d ", col);
+
+        }
+        printf("\n");
+    }
+}
 ```
 ### **Possible Output**
 
 ```
+Pattern 1: 
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
 
+Pattern 2: 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+Pattern 3: 
+    *
+   ***
+  *****
+ *******
+*********
+
+Pattern 4: 
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+Pattern 5: 
+1 2 3 4 5 4 3 2 1 
+  1 2 3 4 3 2 1 
+    1 2 3 2 1 
+      1 2 1 
+        1
+
+Pattern 6: 
+5 4 3 2 1 
+5 4 3 2
+5 4 3
+5 4
+5
 ```
 
 ### **Description**
+I. **Main Function**
+* The program defines functions pattern1() to pattern6() to print each pattern.
+* Each pattern is printed by using nested loops and appropriate formatting using printf statements.
+* The main() function calls each pattern function and displays the patterns one by one with suitable headings.
+
+II. **Pattern 1**
+* Initialize a variable row and set it to 1.
+* Repeat the following steps until row is less than or equal to 5:
+    * Initialize a variable col and set it to 1.
+    * Repeat the following steps until col is less than or equal to row:
+        * Print the value of col followed by a space.
+        * Increment col by 1.
+    * Print a new line.
+    * Increment row by 1.
+
+III. **Pattern 2:**
+
+* Initialize a variable row and set it to 5.
+* Repeat the following steps until row is greater than 0:
+    * Initialize a variable col and set it to 1.
+    * Repeat the following steps until col is less than or equal to row:
+        * Print the value of col followed by a space.
+        * Increment col by 1.
+    * Print a new line.
+    * Decrement row by 1.
+
+IV. **Pattern 3:**
+
+* Initialize a variable row and set it to 1.
+* Repeat the following steps until row is less than or equal to 5:
+    * Repeat the following steps for 5 - row times:
+        * Print a space.
+    * Repeat the following steps for 2 * row - 1 times:
+        * Print an asterisk (*).
+    * Print a new line.
+    * Increment row by 1.
+
+
+V. **Pattern 4:**
+
+* Initialize a variable num and set it to 1.
+* Initialize a variable row and set it to 1.
+* Repeat the following steps until row is less than or equal to 5:
+    * Initialize a variable col and set it to 1.
+    * Repeat the following steps until col is less than or equal to row:
+        * Print the value of num followed by a space.
+        * Increment num by 1.
+    * Increment col by 1.
+    * Print a new line.
+    * Increment row by 1.
+
+
+VI. **Pattern 5:**
+
+* Initialize a variable row and set it to 1.
+* Repeat the following steps until row is less than or equal to 5:
+    * Repeat the following steps for row - 1 times:
+        * Print a space.
+    * Repeat the following steps for 6 - row times:
+        * Print the value of num1.
+        * Increment num1 by 1.
+    * Repeat the following steps for 5 - row times:
+        * Print the value of num2.
+        * Decrement num2 by 1.
+    * Print a new line.
+    * Increment row by 1.
+
+
+VII. **Pattern 6:**
+
+* Initialize a variable row and set it to 5.
+* Repeat the following steps until row is greater than 0:
+    * Initialize a variable col and set it to 5.
+    * Repeat the following steps until col is greater than or equal to 6 - row:
+        * Print the value of col followed by a space.
+        * Decrement col by 1.
+    * Print a new line.
+    * Decrement row by 1.
 
 ### **Conclusion**
+The program successfully prints the given patterns using loops and nested loops. Each pattern is printed using the corresponding pattern function. The output displays the patterns with proper formatting.
+
 
 ---
 ---
 <br/>
-<br/> -->
+<br/> 
