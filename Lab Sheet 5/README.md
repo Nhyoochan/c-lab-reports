@@ -772,25 +772,82 @@ The program successfully checks whether a given number is a palindrome or not. I
 <br/>
 
 
-<!--  
->## <span id="q1">1. WAP to read 10 numbers from user and find their sum and average.</span>
+ 
+>## <span id="q11">1. WAP to find HCF and LCM of two numbers.</span>
 
 ### **Introduction**
-
+This program calculates the Highest Common Factor (HCF) and the Least Common Multiple (LCM) of two numbers.
 ### **Code**
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num1, num2, larger_num, smaller_num, hcf, lcm;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &num1, &num2);
+
+    larger_num = num1 > num2 ? num1 : num2;
+    smaller_num = num2 > num1 ? num1 : num2;
+
+    // Finding HCF
+    for (int i = 1; i <= smaller_num; i++)
+    {
+        if (larger_num % i == 0 && smaller_num % i == 0)
+        {
+            hcf = i;
+        }
+    }
+
+    // Finding LCM
+    for (int i = larger_num;; i++)
+    {
+        if (i % larger_num == 0 && i % smaller_num == 0)
+        {
+            lcm = i;
+            break;
+        }
+    }
+
+    printf("HCF of %d and %d is: %d\n", num1, num2, hcf);
+    printf("LCM of %d and %d is: %d\n", num1, num2, lcm);
+
+    return 0;
+}
 ```
 ### **Possible Output**
 
 ```
-
+Enter two numbers: 12 18
+HCF of 12 and 18 is: 6
+LCM of 12 and 18 is: 36
 ```
 
 ### **Description**
+* The user is prompted to enter two numbers.
+* The numbers are stored in the variables num1 and num2.
+* The larger number is determined using the ternary operator and stored in the variable larger_num.
+* The smaller number is determined using the ternary operator and stored in the variable smaller_num.
+* The program calculates the HCF using a for loop:
+* The loop starts from 1 and continues until the value of smaller_num.
+* In each iteration, it checks if both larger_num and smaller_num are divisible by the loop variable i.
+* If they are divisible, the loop variable i is assigned to the variable hcf.
+* The loop continues until all possible common factors between larger_num and smaller_num are checked.
+* The program calculates the LCM using an infinite for loop:
+* The loop starts from larger_num and continues indefinitely.
+* In each iteration, it checks if both larger_num and smaller_num are divisible by the loop variable i.
+* If they are divisible, the loop variable i is assigned to the variable lcm, and the loop is terminated using the break statement.
+* The loop finds the smallest common multiple of larger_num and smaller_num since it starts from larger_num and increments by larger_num in each iteration.
+* The calculated HCF and LCM are displayed using printf statements.
+* The program terminates.
+
 
 ### **Conclusion**
+The program successfully calculates the HCF and LCM of two given numbers. It determines the larger and smaller numbers and then uses for loops to find the HCF and LCM respectively. The output displays the calculated HCF and LCM based on the given numbers.
+
+
 
 ---
 ---
