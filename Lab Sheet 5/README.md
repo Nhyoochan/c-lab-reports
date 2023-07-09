@@ -855,7 +855,7 @@ The program successfully calculates the HCF and LCM of two given numbers. It det
 <br/> 
 
  
->## <span id="q12">13. WAP to read 10 numbers from user and find their sum and average.</span>
+>## <span id="q13">13. WAP to read 10 numbers from user and find their sum and average.</span>
 
 ### **Introduction**
 This program prints several patterns using loops and nested loops.
